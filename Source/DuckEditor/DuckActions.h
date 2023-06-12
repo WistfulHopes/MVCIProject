@@ -9,7 +9,7 @@
 class FCharacterAssetTypeActions : public FAssetTypeActions_Base
 {
 	
-	public:
+public:
 
 	FCharacterAssetTypeActions(EAssetTypeCategories::Type InAssetCategory);
 
@@ -19,7 +19,27 @@ class FCharacterAssetTypeActions : public FAssetTypeActions_Base
 	FColor GetTypeColor() const override;
 	uint32 GetCategories() override;
 
-	private:
+private:
+	
+	EAssetTypeCategories::Type MyAssetCategory;
+};
+
+// PersonalData
+
+class FPersonalDataTypeActions : public FAssetTypeActions_Base
+{
+	
+public:
+
+	FPersonalDataTypeActions(EAssetTypeCategories::Type InAssetCategory);
+
+	virtual bool CanFilter() override;
+	UClass* GetSupportedClass() const override;
+	virtual FText GetName() const override;
+	FColor GetTypeColor() const override;
+	uint32 GetCategories() override;
+
+private:
 	
 	EAssetTypeCategories::Type MyAssetCategory;
 };

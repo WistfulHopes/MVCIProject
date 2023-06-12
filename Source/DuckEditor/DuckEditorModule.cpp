@@ -34,6 +34,7 @@ public:
 			LOCTEXT("DuckAssetCategory", "Duck"));
 
 		RegisterAssetTypeAction(AssetTools, MakeShareable(new FCharacterAssetTypeActions(DuckAssetCategoryBit)));
+		RegisterAssetTypeAction(AssetTools, MakeShareable(new FPersonalDataTypeActions(DuckAssetCategoryBit)));
 	}
 
 	virtual void ShutdownModule() override

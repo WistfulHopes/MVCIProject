@@ -3,6 +3,7 @@
 #include "DuckEditorModule.h"
 #include "DuckActions.h"
 #include "CharacterAsset.h"
+#include "PersonalData.h"
 
 #define LOCTEXT_NAMESPACE "DuckAssetTypeActions"
 
@@ -36,6 +37,38 @@ FColor FCharacterAssetTypeActions::GetTypeColor() const
 }
 
 uint32 FCharacterAssetTypeActions::GetCategories()
+{
+	return EAssetTypeCategories::Basic | MyAssetCategory;
+}
+
+// PersonalData
+
+FPersonalDataTypeActions::FPersonalDataTypeActions(EAssetTypeCategories::Type InAssetCategory)
+{
+	MyAssetCategory = InAssetCategory;
+}
+
+bool FPersonalDataTypeActions::CanFilter()
+{
+	return true;
+}
+
+UClass* FPersonalDataTypeActions::GetSupportedClass() const
+{
+	return UPersonalData::StaticClass();
+}
+
+FText FPersonalDataTypeActions::GetName() const
+{
+	return LOCTEXT("FPersonalDataTypeName", "Personal Data");
+}
+
+FColor FPersonalDataTypeActions::GetTypeColor() const
+{
+	return MainColor;
+}
+
+uint32 FPersonalDataTypeActions::GetCategories()
 {
 	return EAssetTypeCategories::Basic | MyAssetCategory;
 }
