@@ -27,7 +27,7 @@ UClass* FCharacterAssetTypeActions::GetSupportedClass() const
 
 FText FCharacterAssetTypeActions::GetName() const
 {
-	return LOCTEXT("FCharacterAssetTypeName", "Character Item");
+	return LOCTEXT("FCharacterAssetTypeName", "Character Asset");
 }
 
 FColor FCharacterAssetTypeActions::GetTypeColor() const
