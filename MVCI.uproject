@@ -13,6 +13,11 @@
 			"Name": "DuckAnalytics",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "DuckEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
 		}
 	]
 }
