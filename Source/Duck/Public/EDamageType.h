@@ -1,0 +1,47 @@
+#pragma once
+#include "DuckModule.h"
+#include "EDamageType.generated.h"
+
+UENUM(BlueprintType)
+enum class EDamageType : uint8 {
+    ZURI,
+    ZURI_NE,
+    KUZURE,
+    ASHI,
+    BUTT_OKI,
+    BUTT_NE,
+    BUTT_TATAKI,
+    BUTT_TATANE,
+    PIYORI,
+    STAND_PIYO,
+    RANBU,
+    ICE_KATA,
+    BUTT_ICE,
+    BUTT_KIRI,
+    BUTT_BOUND,
+    BUTT_CHO,
+    BUTT_MUTEKI,
+    HARMLESS,
+    DOWN_DM,
+    DEATH,
+    KEZURI_DIE,
+    NAGE_BUTT,
+    NAGE_SLEEP,
+    BUTT_DOWN,
+    BUTT_WALL,
+    GD_STAND,
+    GD_CROUCH,
+    GD_AIR,
+    KIRI_DOWN,
+    SLIDE_DOWN,
+    SLIDE_BUTT,
+    BUTT_RANBU,
+    BUTT_MIND,
+    BOSS_0_L,
+    BOSS_0_M,
+    BOSS_0_H,
+    BOSS_1_L,
+    BOSS_1_M,
+    BOSS_1_H,
+};
+

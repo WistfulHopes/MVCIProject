@@ -1,0 +1,24 @@
+#pragma once
+#include "DuckModule.h"
+#include "EStoryTextWinType.generated.h"
+
+UENUM(BlueprintType)
+enum class EStoryTextWinType : uint8 {
+    TXT_WIN_DEFEAT_TEAM,
+    TXT_WIN_DEFEAT_ALL,
+    TXT_WIN_DEFEAT_PL020,
+    TXT_WIN_DEFEAT_PL011,
+    TXT_WIN_DEFEAT_PL00F,
+    TXT_WIN_DEFEAT_PL00D,
+    TXT_WIN_DEFEAT_PL018,
+    TXT_WIN_DEFEAT_PL01A,
+    TXT_WIN_DEFEAT_PL00A,
+    TXT_WIN_DEFEAT_PL004,
+    TXT_WIN_DEFEAT_PL005,
+    TXT_WIN_DEFEAT_PL021,
+    TXT_WIN_PROTECT_ST006,
+    TXT_WIN_CHARGE_SHIELD,
+    TXT_WIN_DEFEAT_PL016,
+    TXT_WIN_MAX UMETA(Hidden),
+};
+

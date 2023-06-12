@@ -1,0 +1,28 @@
+#pragma once
+#include "DuckModule.h"
+#include "EDemoViewFadeType.generated.h"
+
+UENUM(BlueprintType)
+enum class EDemoViewFadeType : uint8 {
+    VIEW_FADE_NONE,
+    VIEW_FADE_IN_00,
+    VIEW_FADE_IN_01,
+    VIEW_FADE_IN_02,
+    VIEW_FADE_OUT_00,
+    VIEW_FADE_OUT_01,
+    VIEW_FADE_OUT_02,
+    VIEW_FADE_IN_BLACK_10F,
+    VIEW_FADE_IN_BLACK_20F,
+    VIEW_FADE_IN_BLACK_30F,
+    VIEW_FADE_IN_WHITE_10F,
+    VIEW_FADE_IN_WHITE_20F,
+    VIEW_FADE_IN_WHITE_30F,
+    VIEW_FADE_OUT_BLACK_10F,
+    VIEW_FADE_OUT_BLACK_20F,
+    VIEW_FADE_OUT_BLACK_30F,
+    VIEW_FADE_OUT_WHITE_10F,
+    VIEW_FADE_OUT_WHITE_20F,
+    VIEW_FADE_OUT_WHITE_30F,
+    VIEW_FADE_MAX UMETA(Hidden),
+};
+
